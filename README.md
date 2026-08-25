@@ -12,7 +12,7 @@
 9. [Repository Structure](#-repository-structure)
 ---
 
-##  Project Overview
+## Project Overview
 
 SmartCare monitors 50 patients via smartwatch telemetry  heart rate, step count, sleep, stress index, and fall alerts  and needs a way to turn raw daily readings into a **clinically actionable risk view** a care coordinator can actually use.
 
@@ -22,7 +22,7 @@ While the underlying data pipeline (cleaning, feature engineering, risk scoring,
 
 ---
 
-##  Business Problem & Objectives
+## Business Problem & Objectives
 
 **Business question:** 
 *Q.1 Which patients are at highest risk of a health decline or fall event?*
@@ -51,7 +51,7 @@ The report is built on a small but genuine **relational model**, not a single fl
 
 ---
 
-##  DAX Measures
+## DAX Measures
 <img width="1361" height="467" alt="image" src="https://github.com/user-attachments/assets/4e1cba31-3b6f-4040-ba47-3244f28539b1" />
 
 <img width="1365" height="352" alt="image" src="https://github.com/user-attachments/assets/d0e67bc0-d4c0-44ad-bcd3-b4ac85b6b4dd" />
@@ -63,7 +63,7 @@ The report is built on a small but genuine **relational model**, not a single fl
 <img width="1350" height="342" alt="image" src="https://github.com/user-attachments/assets/998b66d3-1039-4c16-a2fc-060a44075e36" />
 
 
-##  Power BI Report Pages
+## Power BI Report Pages
 
 **1. Executive Overview**
 Fleet-level KPI cards (Total Patients, Avg Health Score, High/Critical Risk %, Fall Alert %) plus health score, risk category, age, activity level, and gender distributions  with a full slicer panel (Age Group, Gender, Risk Category, Activity Level, Weekly Health Score range, Age range) driving every visual on the page.
@@ -94,7 +94,7 @@ A dedicated phone-layout page  the KPI cards and distribution charts re-flowed f
 
 ---
 
-##  Custom & Embedded Visuals
+## Custom & Embedded Visuals
 Beyond Power BI's native visual set, the report installs and uses **three AppSource custom visuals**, plus one **embedded Python script visual**  a meaningfully more advanced toolkit than a default-visuals-only report:
 
 | Visual | Type | Used for |
@@ -136,7 +136,7 @@ Power BI feeds this script a live `dataset` dataframe bound to 11 report columns
 
 ---
 
-##  Interactivity & UX Design
+## Interactivity & UX Design
 
 - **Slicers** across the report (Age Group, Gender  button-style, Risk Category, Activity Level, a Weekly Health Score range slider, and an Age range slider), all cross-filtering every visual on their page
 - **Cross-filtering enabled on every visual** (`drillFilterOtherVisuals`)  clicking any chart segment filters the rest of the page
@@ -147,7 +147,7 @@ Power BI feeds this script a live `dataset` dataframe bound to 11 report columns
 
 ---
 
-##  Key Insights
+## Key Insights
 
 | # | Insight (from the dashboard) |
 |---|---|
@@ -159,7 +159,7 @@ Power BI feeds this script a live `dataset` dataframe bound to 11 report columns
 
 ---
 
-##  Repository Structure
+## Repository Structure
 
 ```
 SmartCare_Health_Monitoring_with_Smartwatches/
@@ -189,7 +189,7 @@ SmartCare_Health_Monitoring_with_Smartwatches/
 
 ---
 
-##  How to Open This Project
+## How to Open This Project
 
 **1. Clone the repository**
 ```bash
